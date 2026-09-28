@@ -1,5 +1,5 @@
 import {pendingRequirements,learnerErrorLocation,recallQuestion} from './learner-support.mjs?v=2026-09-video-assisted-1';
-import {renderMedia,handleMediaClick,handleMediaInput,stopMedia} from './teaching-media.mjs?v=2026-09-video-assisted-1';
+import {renderMedia,handleMediaClick,handleMediaInput,stopMedia} from './teaching-media.mjs?v=2026-09-public-pages-1';
 import { journeySteps, pathPosition, missingPrerequisites, recommend, nextMilestone, selectedJourney, recommendAcross, journeyForNode, recentPath } from './guided-journey.mjs?v=2026-09-video-assisted-1';
 import { LINK_BASES, LINK_PAGES, resolveLessonLink } from './link-lab.mjs?v=2026-09-video-assisted-1';
 import { trajectorySamples, hanoiFrames, routeComparison, quantizationRows, boxOverlap, gradientTrace, describeNumbers, analyzeTable, cosine, binaryMetrics, regressionScores } from './learning-labs.mjs?v=2026-09-video-assisted-1';

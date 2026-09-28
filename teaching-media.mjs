@@ -41,11 +41,24 @@ export function handleMediaClick(button,lesson){
  if(action==='media-video-load'){
   const video=box.querySelector('video');button.disabled=true;
   box.querySelector('[data-video-status]').textContent='正在載入本機影片…';
-  // Fetch only on request. A bounded blob also supports seeking on simple offline servers without Range.
-  fetch((lesson.media.video||lesson.media).file).then(r=>{if(!r.ok)throw Error('media unavailable');return r.blob();}).then(blob=>{
-   if(!video.isConnected)return;const url=URL.createObjectURL(blob);videoUrls.set(video,url);video.src=url;video.load();
+  // Only load after the learner requests it. HTTPS hosts with Range support use
+  // native streaming (including WebKit); simple local servers retain Blob seek.
+  (async()=>{
+   const file=(lesson.media.video||lesson.media).file;
+   let url;
+   if(document.location?.protocol==='https:'){
+    const head=await fetch(file,{method:'HEAD'});
+    if(!head.ok)throw Error('media unavailable');
+    if(head.headers.get('accept-ranges')?.toLowerCase()==='bytes')url=file;
+   }
+   if(!url){
+    const response=await fetch(file);if(!response.ok)throw Error('media unavailable');
+    const blob=await response.blob();if(!video.isConnected)return;
+    url=URL.createObjectURL(blob);videoUrls.set(video,url);
+   }
+   if(!video.isConnected)return;video.src=url;video.load();
    box.querySelector('[data-video-status]').textContent='影片已載入；請使用播放器播放、暫停或拖曳。無旁白，繁中字幕可在播放器切換。';button.hidden=true;
-  }).catch(()=>{box.querySelector('[data-video-status]').textContent='影片目前無法播放；請展開下方文字操作對照，仍可繼續試做。';button.disabled=false;});return true;
+  })().catch(()=>{box.querySelector('[data-video-status]').textContent='影片目前無法播放；請展開下方文字操作對照，仍可繼續試做。';button.disabled=false;});return true;
  }
  if(action==='media-play'){
   if(playback?.id===lesson.id){stopMedia();return true;}

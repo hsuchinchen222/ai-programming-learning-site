@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedBy": "tools/publish_site.py:v1",
-  "sourceCommit": "e5d8ce7463908d690ec9d55d4a9b6e88a3a996ff",
+  "sourceCommit": "76fffc93644854d9b3a14cea9f6339ab69d006bb",
   "files": [
     {
       "path": ".gitattributes",
@@ -15,8 +15,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 114077,
-      "sha256": "8af24bf19817aa667feb7007eee8f1f54d2a90588c3c4e63325db84e2742ce26"
+      "bytes": 114074,
+      "sha256": "1a5dd652df7f3ac94f43522be4cc55e01d4c5487b8e0db8a67af72e7b09beb3f"
     },
     {
       "path": "checker.py",
@@ -40,8 +40,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 2900,
-      "sha256": "982aca825f8cc127710beed6018ffe4578d43437fa202a3943ba19a70b88ef8e"
+      "bytes": 2897,
+      "sha256": "2314adb52aa3e9d2bb193805241f3f31eb30734f7ca704c777acf9c317cf1a4d"
     },
     {
       "path": "learner-support.mjs",
@@ -370,8 +370,8 @@
     },
     {
       "path": "teaching-media.mjs",
-      "bytes": 11752,
-      "sha256": "09a96f348e031fc78cd75730e066848bb771e8ca7d9faad05f77c1270dcc8e25"
+      "bytes": 12158,
+      "sha256": "f00ba6929789dc63124745e3fc1d4d4cff255d4360d0008b62bcdf7c0035d949"
     },
     {
       "path": "vendor/fonts/0569c822cab6c510.ttf",
@@ -499,5 +499,5 @@
       "sha256": "7d434f487a81a9ea4944000fbbb5a771da89ca32fd1ff5edca0c5954b90cedec"
     }
   ],
-  "totalBytes": 52592535
+  "totalBytes": 52592935
 }
