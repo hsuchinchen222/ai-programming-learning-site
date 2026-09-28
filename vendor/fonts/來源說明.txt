@@ -1,0 +1,43 @@
+Google Fonts：DM Sans、Noto Sans TC；沿用原站字型，改為隨站附帶以支援離線。授權見各 OFL 檔。
+[
+  [
+    "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTg.ttf",
+    "8257aa2626c379cb.ttf",
+    48200
+  ],
+  [
+    "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf",
+    "18e69125ce1f964e.ttf",
+    48280
+  ],
+  [
+    "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf",
+    "9bd8ba39c9d55e06.ttf",
+    48308
+  ],
+  [
+    "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf",
+    "0569c822cab6c510.ttf",
+    48280
+  ],
+  [
+    "https://fonts.gstatic.com/s/notosanstc/v39/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz70e1_Co.ttf",
+    "1b32e273c4f73505.ttf",
+    7085600
+  ],
+  [
+    "https://fonts.gstatic.com/s/notosanstc/v39/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz7361_Co.ttf",
+    "a8f7c4402cce0747.ttf",
+    7084304
+  ],
+  [
+    "https://fonts.gstatic.com/s/notosanstc/v39/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz75Ky_Co.ttf",
+    "49f7062a4d48ec66.ttf",
+    7086940
+  ],
+  [
+    "https://fonts.gstatic.com/s/notosanstc/v39/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76Cy_Co.ttf",
+    "6e52b5176533337f.ttf",
+    7090820
+  ]
+]
